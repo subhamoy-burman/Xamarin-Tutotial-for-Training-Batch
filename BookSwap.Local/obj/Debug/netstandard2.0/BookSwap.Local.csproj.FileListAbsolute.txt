@@ -1,0 +1,15 @@
+/Users/imac01/Projects/Xamarin.Forms UI Challenges/BookSwap.Local/BookSwap.Local/bin/Debug/netstandard2.0/BookSwap.Local.deps.json
+/Users/imac01/Projects/Xamarin.Forms UI Challenges/BookSwap.Local/BookSwap.Local/bin/Debug/netstandard2.0/BookSwap.Local.dll
+/Users/imac01/Projects/Xamarin.Forms UI Challenges/BookSwap.Local/BookSwap.Local/bin/Debug/netstandard2.0/ref/BookSwap.Local.dll
+/Users/imac01/Projects/Xamarin.Forms UI Challenges/BookSwap.Local/BookSwap.Local/bin/Debug/netstandard2.0/BookSwap.Local.pdb
+/Users/imac01/Projects/Xamarin.Forms UI Challenges/BookSwap.Local/BookSwap.Local/obj/Debug/netstandard2.0/BookSwap.Local.csprojAssemblyReference.cache
+/Users/imac01/Projects/Xamarin.Forms UI Challenges/BookSwap.Local/BookSwap.Local/obj/Debug/netstandard2.0/App.xaml.g.cs
+/Users/imac01/Projects/Xamarin.Forms UI Challenges/BookSwap.Local/BookSwap.Local/obj/Debug/netstandard2.0/MainPage.xaml.g.cs
+/Users/imac01/Projects/Xamarin.Forms UI Challenges/BookSwap.Local/BookSwap.Local/obj/Debug/netstandard2.0/BookSwap.Local.AssemblyInfoInputs.cache
+/Users/imac01/Projects/Xamarin.Forms UI Challenges/BookSwap.Local/BookSwap.Local/obj/Debug/netstandard2.0/BookSwap.Local.AssemblyInfo.cs
+/Users/imac01/Projects/Xamarin.Forms UI Challenges/BookSwap.Local/BookSwap.Local/obj/Debug/netstandard2.0/XamlC.stamp
+/Users/imac01/Projects/Xamarin.Forms UI Challenges/BookSwap.Local/BookSwap.Local/obj/Debug/netstandard2.0/BookSwap.Local.dll
+/Users/imac01/Projects/Xamarin.Forms UI Challenges/BookSwap.Local/BookSwap.Local/obj/Debug/netstandard2.0/ref/BookSwap.Local.dll
+/Users/imac01/Projects/Xamarin.Forms UI Challenges/BookSwap.Local/BookSwap.Local/obj/Debug/netstandard2.0/BookSwap.Local.pdb
+/Users/imac01/Projects/Xamarin.Forms UI Challenges/BookSwap.Local/BookSwap.Local/obj/Debug/netstandard2.0/Cells/BookViewCell.xaml.g.cs
+/Users/imac01/Projects/Xamarin.Forms UI Challenges/BookSwap.Local/BookSwap.Local/obj/Debug/netstandard2.0/SwapDetails.xaml.g.cs

@@ -1,0 +1,84 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:rainbows="clr-namespace:Xamarin.Forms.DebugRainbows;assembly=Xamarin.Forms.DebugRainbows"
+             xmlns:viewmodel = "clr-namespace:BookSwap.Local.ViewModels"
+             xmlns:skia="clr-namespace:SkiaSharp.Views.Forms;assembly=SkiaSharp.Views.Forms"
+             xmlns:pancake = "clr-namespace:Xamarin.Forms.PancakeView;assembly=Xamarin.Forms.PancakeView"
+             xmlns:cells="clr-namespace:BookSwap.Local.Cells"
+             mc:Ignorable="d" x:Class="BookSwap.Local.MainPage">
+
+    <ContentPage.BindingContext>
+        <viewmodel:BooksViewModel></viewmodel:BooksViewModel>
+    </ContentPage.BindingContext>
+
+    <NavigationPage.TitleView>
+        <StackLayout Orientation="Horizontal">
+            <Label Text="Staff Safety"
+                   TextColor="#666666"
+                   FontSize="18"
+                   HorizontalOptions="Center"
+                   FontAttributes="Bold"
+                   Margin="100,0,0,0"
+                   VerticalOptions="Center"></Label>
+            
+        </StackLayout>
+    </NavigationPage.TitleView>
+    <ContentPage.ToolbarItems>
+        <ToolbarItem IconImageSource="search"></ToolbarItem>
+        <ToolbarItem IconImageSource="preferences"></ToolbarItem>
+    </ContentPage.ToolbarItems>
+     <!--rainbows:DebugRainbow.IsDebug="True"-->
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="80"></RowDefinition>
+            <RowDefinition Height="*"></RowDefinition>
+        </Grid.RowDefinitions>
+
+
+        <Grid VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="Auto" />
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="Auto" />
+            </Grid.ColumnDefinitions>
+        
+            <skia:SKCanvasView PaintSurface="SkCanvasView_PaintSurface" Grid.ColumnSpan="3">
+
+            </skia:SKCanvasView>
+            <pancake:PancakeView Margin="10"
+                                 Elevation="10"
+                                 HasShadow="True">
+                 <Image Margin="2" Aspect="AspectFill" Source="book_extremelyloud"></Image>
+            </pancake:PancakeView>
+        <StackLayout Grid.Column="1" Spacing="0"  VerticalOptions="Center">
+            <Label Text="Your Book" FontAttributes="Bold" TextColor="#B9A903"></Label>
+            <Label Text="Extremely Loud and incredibly close"
+                   FontAttributes="Bold"
+                   TextColor="#F32D42"></Label>
+             <Label Text="Jonathoan Safran Foer" TextColor="#F32D42" Opacity=".5"></Label>
+        </StackLayout>
+        <Image Grid.Column="2" Margin="0,25,20,0"
+               HeightRequest="24"
+               WidthRequest="24"
+               Source="pencil" VerticalOptions="Start"></Image>
+        </Grid>
+
+        <ListView x:Name="BooksListView" Grid.Row="1"
+                  ItemsSource="{Binding Books}"
+                  RowHeight="200"
+                  SeparatorVisibility="None"
+                  ItemTapped="BookListView_ItemTapped"
+                  CachingStrategy="RecycleElement"
+                  >
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <cells:BookViewCell></cells:BookViewCell>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+
+        </ListView>
+    </Grid>
+</ContentPage>

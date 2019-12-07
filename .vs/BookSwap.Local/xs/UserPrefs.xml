@@ -1,0 +1,50 @@
+﻿<Properties StartupConfiguration="{E4CA73EC-B456-4E80-8957-8F34F0BB51DD}|Default">
+  <MonoDevelop.Ide.Workbench ActiveDocument="BookSwap.Local/obj/Debug/netstandard2.0/SwapDetails.xaml.g.cs">
+    <Files>
+      <File FileName="BookSwap.Local/SwapDetails.xaml" Line="9" Column="40" />
+      <File FileName="BookSwap.Local/SwapDetails.xaml.cs" Line="41" Column="22" />
+      <File FileName="BookSwap.Local/MainPage.xaml.cs" Line="47" Column="1" />
+      <File FileName="BookSwap.Local/MainPage.xaml" Line="8" Column="93" />
+      <File FileName="BookSwap.Local/Model/Book.cs" Line="32" Column="10" />
+      <File FileName="BookSwap.Local/ViewModels/BooksViewModel.cs" Line="29" Column="14" />
+      <File FileName="BookSwap.Local/App.xaml.cs" Line="25" Column="43" />
+      <File FileName="BookSwap.Local/App.xaml" Line="69" Column="34" />
+      <File FileName="BookSwap.Local/Cells/BookViewCell.xaml" Line="1" Column="1" />
+      <File FileName="BookSwap.Local/Cells/BookViewCell.xaml.cs" Line="1" Column="1" />
+      <File FileName="BookSwap.Local/ScrollMessage.cs" />
+      <File FileName="BookSwap.Local/IViewLocationFetcher.cs" />
+      <File FileName="BookSwap.Local.Android/ViewLocationFetcher.cs" />
+      <File FileName="BookSwap.Local.iOS/ViewLocationFetcher.cs" Line="1" Column="1" />
+      <File FileName="BookSwap.Local/ColorPalette.cs" Line="61" Column="63" />
+      <File FileName="BookSwap.Local/obj/Debug/netstandard2.0/SwapDetails.xaml.g.cs" Line="20" Column="60" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="BookSwap.Local" expanded="True">
+            <Node name="BookSwap.Local" expanded="True">
+              <Node name="Cells" expanded="True" />
+              <Node name="Model" expanded="True" />
+              <Node name="ViewModels" expanded="True" />
+              <Node name="SwapDetails.xaml" expanded="True">
+                <Node name="SwapDetails.xaml.cs" selected="True" />
+              </Node>
+            </Node>
+            <Node name="BookSwap.Local.Android" expanded="True">
+              <Node name="Assets" expanded="True" />
+            </Node>
+            <Node name="BookSwap.Local.iOS" expanded="True" />
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.ItemProperties.BookSwap.Local.Android AndroidDesignerPreferredTheme="Theme.AppCompat.Light.NoActionBar" PreferredExecutionTarget="Android.06157df695c4db17" />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.ItemProperties.BookSwap.Local.iOS FirstBuild="True" />
+</Properties>

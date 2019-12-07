@@ -1,0 +1,82 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:skia="clr-namespace:SkiaSharp.Views.Forms;assembly=SkiaSharp.Views.Forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="BookSwap.Local.SwapDetails">
+    <ContentPage.Content>
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*"></RowDefinition>
+                <RowDefinition Height="100"></RowDefinition>
+                <RowDefinition Height="*"></RowDefinition>
+            </Grid.RowDefinitions>
+
+            <!--background-->
+           <skia:SKCanvasView
+               x:Name="pageBackground"
+               VerticalOptions="Fill"
+               HorizontalOptions="Fill"
+               Grid.RowSpan="3"
+               PaintSurface="PageBackground_PaintSurface"
+               >
+
+           </skia:SKCanvasView>
+            <!--Swap from book-->
+            <Grid Margin="10">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="*"></RowDefinition>
+                    <RowDefinition Height="*"></RowDefinition>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="Auto"></ColumnDefinition>
+                    <ColumnDefinition Width="*"></ColumnDefinition>
+                </Grid.ColumnDefinitions>
+                <BoxView Grid.RowSpan="2"
+                     WidthRequest="153"
+                     HeightRequest="218"
+                     VerticalOptions="Center"
+                     HorizontalOptions="Center"
+                     Color="{Binding SwapFromBook.Colors.TitleColor}"></BoxView>
+             <Image
+                 Grid.Row="0"
+                 Grid.RowSpan="2"
+                 Grid.Column="0"
+                 WidthRequest="133"
+                 HeightRequest="198"
+                 VerticalOptions="Center"
+                 HorizontalOptions="Center"
+                 Aspect="AspectFit"
+                 Source="{Binding SwapFromBook.CoverImage}">
+
+             </Image>
+
+                <StackLayout Grid.Column="1" Margin="10,0,0,0">
+                    <Label Text="{Binding SwapFromBook.Title}"
+                           Style="{StaticResource BookTitle}"
+                           TextColor="{Binding SwapFromBook.Colors.TitleColor}"></Label>
+
+                    <Label Style="{StaticResource Author}"
+                           Text="{Binding SwapFromBook.Author}"
+                           TextColor="{Binding SwapFromBook.Colors.TitleColor}"></Label>
+                </StackLayout>
+
+                <Grid Grid.Column="1"
+                      Grid.Row="1"
+                      Margin="0,0,0,20">
+                    <BoxView Color="Red" Opacity=".5"
+                             ></BoxView>
+                    <Label Text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, veniam, quis nostrud exercitation"
+                           Style="{StaticResource Author}"
+                           VerticalOptions="Center"
+                           Margin="10"
+                           MaxLines="4">
+
+                    </Label>
+                </Grid>
+            </Grid>
+            
+             <Image Grid.Row="2" Source="{Binding SelectedBook.CoverImage}"></Image>
+        </Grid>
+       
+    </ContentPage.Content>
+</ContentPage>
